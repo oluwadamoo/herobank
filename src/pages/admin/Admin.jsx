@@ -33,7 +33,7 @@ function Admin() {
         setFlagForDel(false)
         setIsDeleting(true)
         try {
-            const res = await axios.request({
+            await axios.request({
                 method: "DELETE",
                 url: `https://hero-bank-api.herokuapp.com/api/users/del-user/${userId}`,
                 headers: {

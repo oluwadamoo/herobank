@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 import axios from "axios"
-import SidebarCard from '../../components/sidebarCard/SidebarCard'
+// import SidebarCard from '../../components/sidebarCard/SidebarCard'
 import Topbar from "../../components/topbar/Topbar";
 import './history.scss'
 import { useParams } from "react-router"
@@ -66,7 +66,7 @@ function History() {
         }
 
         fetchHistory()
-    }, [])
+    }, [myAccount, token])
     return (
         <>
             <Topbar />

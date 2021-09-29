@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react'
-import { useParams } from "react-router"
-import axios from "axios"
+import React from 'react'
+// { useState, useEffect } from 'react'
+// import { useParams } from "react-router"
+// import axios from "axios"
 
 import SidebarCard from '../../components/sidebarCard/SidebarCard'
 import TransactionCard from '../../components/transactionCard/TransactionCard'
@@ -11,9 +12,9 @@ import './balance.scss'
 function Balance() {
 
     // const [user, setUser] = useState({})
-    const [isLoading, setIsLoading] = useState(false)
+    // const [isLoading, setIsLoading] = useState(false)
 
-    const userId = useParams().userId
+    // const userId = useParams().userId
 
 
     // useEffect(() => {

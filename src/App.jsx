@@ -1,5 +1,5 @@
-import React, { useContext, useEffect } from "react";
-import { useHistory } from "react-router"
+import React, { useContext } from "react";
+// import { useHistory } from "react-router"
 import {
   BrowserRouter as Router,
   Switch,

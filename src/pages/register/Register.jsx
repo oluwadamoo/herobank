@@ -30,7 +30,7 @@ function Register() {
             }
             try {
                 setIsLoading(true)
-                const res = await axios.post("https://hero-bank-api.herokuapp.com/api/auth/register", user)
+                await axios.post("https://hero-bank-api.herokuapp.com/api/auth/register", user)
                 history.push('/login')
             }
             catch (e) {
