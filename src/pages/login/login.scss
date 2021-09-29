@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+.login {
+  background-image: url("https://images.unsplash.com/photo-1571840615771-acc2e9f42641?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1113&q=80");
+  background-size: cover;
+  min-height: 100vh;
+  color: rgb(184, 103, 147);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto Mono", monospace;
+
+  .wrapper {
+    padding: 40px;
+    box-shadow: 1px 1px 12px rgb(48, 25, 38);
+    .loginCard {
+      padding: 10px;
+      min-width: 50vw;
+      min-height: 50vh;
+      background-color: rgba(255, 255, 255, 0.89);
+      border-radius: 10px;
+      box-shadow: 1px 1px 12px rgba(39, 30, 35, 0.479),
+        1px 1px 17px rgba(29, 21, 25, 0.479),
+        1px 1px 21px rgba(17, 13, 15, 0.479);
+      .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 10px;
+
+        .logo {
+          h1 {
+            font-family: "Lobster", cursive;
+            font-size: 65px;
+
+            text-shadow: 1px 1px 1px rgb(73, 40, 58),
+              1px 1.5px 1px rgb(97, 59, 80), 1px 2px 1px rgb(102, 57, 82),
+              1px 2px 1px rgb(71, 40, 57), 1px 2px 1px rgb(56, 32, 45);
+          }
+        }
+        span {
+          font-size: 25px;
+        }
+      }
+      .form {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        form {
+          .input {
+            display: flex;
+
+            input {
+              display: block;
+              width: 372px;
+              height: 45px;
+              margin-bottom: 15px;
+              border-radius: 5px;
+              padding: 0 14px;
+
+              border: 1px solid rgb(184, 103, 147);
+              border-right-color: transparent;
+              font-size: 20px;
+
+              &:focus {
+                outline: none;
+              }
+            }
+            .iconContainer {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              height: 45px;
+              margin-left: -4px;
+              border-radius: 0 5px 5px 0;
+              width: 38px;
+              //   padding: 1px;
+              border: 1px solid rgb(184, 103, 147);
+              border-left-color: transparent;
+              right: 0px;
+              background-color: rgb(233, 229, 229);
+              .icon {
+                color: rgb(82, 46, 66);
+                font-size: 30px;
+              }
+            }
+          }
+          .authButton {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 20px;
+            margin-top: 15px;
+
+            .authText {
+              font-size: 12px;
+              border-radius: none;
+              background: none;
+              box-shadow: none;
+              cursor: auto;
+              color: rgb(184, 103, 147);
+            }
+            a {
+              text-decoration: none;
+              cursor: pointer;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              padding: 10px;
+              height: 30px;
+              width: 100px;
+              border-radius: 40px;
+              background-color: rgb(184, 103, 147);
+              color: white;
+              box-shadow: 1px 1px 1px rgb(73, 40, 58),
+                1px 1.5px 1px rgb(184, 103, 147);
+
+              &:active {
+                box-shadow: none;
+              }
+            }
+
+            button {
+              margin-top: 20px;
+              width: 150px;
+              height: 50px;
+              border: none;
+              font-weight: 700;
+              font-size: 18px;
+
+              background-color: rgb(184, 103, 147);
+              border-radius: 40px;
+              box-shadow: 1px 1px 1px rgb(73, 40, 58),
+                1px 1.5px 1px rgb(184, 103, 147);
+              cursor: pointer;
+              color: white;
+
+              &:active {
+                box-shadow: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+@import "../../global.scss";
+
+.transactioncard {
+  //   margin-left: -10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 10px;
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+
+    .heading {
+      background-color: rgb(243, 161, 175);
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+      h1 {
+        font-size: 30px;
+
+        @include seventhBreak {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .content {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      span {
+        font-weight: 500;
+        font-size: 50px;
+      }
+      h3 {
+        font-size: 50px;
+      }
+    }
+
+    .cards {
+      .cardText {
+        h4 {
+          margin-top: 70px;
+          margin-bottom: 30px;
+        }
+      }
+      .cardItems {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .card {
+          display: flex;
+          cursor: pointer;
+          height: 80px;
+          width: 150px;
+          margin-right: 10px;
+          align-items: center;
+          justify-content: center;
+          background-color: rgb(243, 161, 175);
+          border-radius: 10px;
+          box-shadow: 1px 1px 2px rgb(114, 82, 87),
+            1px 2px 2px rgba(114, 82, 87, 0.795);
+          flex-wrap: wrap;
+
+          @include eightBreak {
+            width: 100px;
+          }
+          &:hover {
+            box-shadow: 1px 1px 2px rgb(114, 82, 87),
+              1px 5px 2px rgba(114, 82, 87, 0.795);
+          }
+
+          &:active {
+            box-shadow: 0.5px 0.8px 1px rgb(114, 82, 87),
+              0.7px 1.2px 1px rgba(114, 82, 87, 0.795);
+          }
+          .text {
+            span {
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+  }
+}

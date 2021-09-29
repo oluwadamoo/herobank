@@ -1,0 +1,205 @@
+@import "../../global.scss";
+
+.home {
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgba(209, 206, 206, 0.733);
+  font-family: "Roboto Mono", monospace;
+  color: rgb(145, 140, 140);
+  padding: 3rem;
+
+  @include firstBreak {
+    padding: 1em;
+  }
+
+  @include sixthBreak {
+    padding-bottom: 1em;
+  }
+  a {
+    text-decoration: none;
+    color: rgb(145, 140, 140);
+  }
+
+  .wrapper {
+    margin: 20px 50px;
+    display: flex;
+
+    @include firstBreak {
+      margin: 4% 2%;
+    }
+
+    @include thirdBreak {
+      margin: 10% 2%;
+    }
+
+    @include fifthBreak {
+      margin: 10% 1%;
+    }
+
+    @include sixthBreak {
+      margin-right: -25px;
+      margin-left: 5px;
+      margin-top: 70px;
+      margin-bottom: 20px;
+    }
+
+    @include seventhBreak {
+      flex-direction: column;
+
+      align-items: center;
+    }
+
+    .left {
+      margin-top: 2%;
+      flex: 4;
+
+      @include seventhBreak {
+        width: 100vw;
+      }
+
+      .account {
+        @include seventhBreak {
+          display: flex;
+          flex-direction: column;
+          // align-items: center;
+          margin-left: -5%;
+          // background-color: red;
+        }
+        .account-details {
+          border-radius: 4px;
+          .account-name {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            .icon {
+              font-size: 25px;
+
+              // @include fourthBreak {
+              //   font-size: 20px;
+              // }
+            }
+            .name {
+              margin-left: 2%;
+              span {
+                font-size: 24px;
+                font-weight: 600;
+
+                @include fourthBreak {
+                  font-size: 22px;
+                }
+              }
+            }
+          }
+          hr {
+            width: 60%;
+          }
+          .acctBal {
+            display: flex;
+            font-style: italic;
+
+            margin-top: 5px;
+
+            .balIcon {
+              margin-right: 2%;
+
+              @include sixthBreak {
+                margin: 1%;
+              }
+            }
+            span {
+              font-weight: bold;
+              font-style: normal;
+            }
+          }
+        }
+      }
+    }
+    .right {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-top: 2%;
+      flex: 8;
+
+      @include secondBreak {
+        margin-left: -20px;
+        margin-right: 10px;
+      }
+
+      @include thirdBreak {
+        justify-content: center;
+      }
+
+      @include fifthBreak {
+        margin-left: -50px;
+      }
+
+      @include seventhBreak {
+        flex-direction: column;
+        align-items: center;
+
+        width: 100vw;
+      }
+
+      .card {
+        transition: 0.3s all ease-in;
+        cursor: pointer;
+        padding: 1% 2%;
+        border-radius: 4px;
+        background-color: rgb(243, 161, 175);
+        height: 130px;
+        width: 20rem;
+        margin-right: 3%;
+        margin-top: 3%;
+        color: rgba(230, 230, 230, 0.808);
+
+        @include sixthBreak {
+          width: 15rem;
+        }
+        @include seventhBreak {
+          width: 20rem;
+          justify-self: center;
+          align-self: center;
+          // margin-left: 13%;
+        }
+
+        &:hover {
+          box-shadow: 1px 2px 4px rgba(65, 42, 47, 0.616);
+        }
+        .card-wrapper {
+          height: 130px;
+          width: 20rem;
+          display: flex;
+          justify-content: space-between;
+
+          @include sixthBreak {
+            width: 15rem;
+          }
+
+          @include seventhBreak {
+            width: 20rem;
+          }
+          .card-left {
+            flex: 8;
+
+            align-self: center;
+            margin-right: 30%;
+            span {
+              align-self: center;
+              font-size: 18px;
+              font-weight: 600;
+            }
+          }
+          .card-right {
+            flex: 2;
+            .icon {
+              font-size: 50px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

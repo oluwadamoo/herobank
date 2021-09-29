@@ -1,0 +1,23 @@
+.notFound {
+  height: 100vh;
+  //   padding: 10%;
+  background-size: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    a {
+      &:visited {
+        color: blue;
+      }
+    }
+    img {
+      height: 300px;
+      width: 300px;
+      margin-bottom: 10px;
+    }
+  }
+}

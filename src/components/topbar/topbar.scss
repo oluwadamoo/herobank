@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import "../../global.scss";
+
+.topbar {
+  height: 70px;
+
+  background-color: rgb(223, 213, 219);
+  color: rgb(187, 122, 133);
+  z-index: 1000;
+  box-shadow: 1px 1.6px 4px rgba(41, 25, 28, 0.582);
+  position: fixed;
+  width: 100%;
+  top: 0;
+
+  a {
+    text-decoration: none;
+    color: rgb(187, 122, 133);
+  }
+  .nav-icon {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(112, 60, 68);
+    cursor: pointer;
+    position: relative;
+
+    &:hover + span {
+      display: block;
+    }
+    &:active {
+      color: rgb(255, 80, 106);
+    }
+  }
+  .wrapper {
+    margin: 0 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include fifthBreak {
+      margin: 0 50px;
+    }
+
+    @include seventhBreak {
+      margin: 0 10px;
+      align-items: center;
+      justify-content: center;
+    }
+    .left {
+      .logo {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        @include seventhBreak {
+          margin-left: -5%;
+        }
+        h1 {
+          font-family: "Lobster", cursive;
+          font-size: 45px;
+
+          text-shadow: 1px 1px 1px rgb(73, 40, 58),
+            1px 1.5px 1px rgb(97, 59, 80), 1px 2px 1px rgb(102, 57, 82);
+          margin-right: 80px;
+
+          &:active {
+            text-shadow: 1px 1px 1px rgb(73, 40, 58);
+          }
+        }
+      }
+    }
+    .right {
+      display: flex;
+
+      @include seventhBreak {
+        margin-left: -10%;
+      }
+    }
+  }
+}

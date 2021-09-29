@@ -1,0 +1,48 @@
+@import "../../global.scss";
+
+.balance {
+  height: calc(100vh-30px);
+  padding: 3rem 7rem;
+  padding-bottom: 15em;
+  color: rgb(88, 79, 79);
+  background-color: rgba(209, 206, 206, 0.733);
+  overflow-y: hidden;
+
+  @include seventhBreak {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 4rem 8rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: rgb(145, 140, 140);
+  }
+  .wrapper {
+    margin-top: 4%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .left {
+      flex: 4;
+    }
+    .right {
+      flex: 8;
+
+      @include seventhBreak {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+
+        justify-self: center;
+      }
+    }
+  }
+}
